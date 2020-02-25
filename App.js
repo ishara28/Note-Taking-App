@@ -4,8 +4,10 @@ import { Container, Text, Header } from "native-base";
 import * as Font from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
 import { Button } from "react-native";
+import Home from "./components/Home";
 import Test from "./components/test/Test";
-
+import Note from "./components/Note";
+import HomeStackNavigator from "./routes/HomeStack";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -31,7 +33,7 @@ export default class App extends React.Component {
 
     return (
       <Container>
-        <Test />
+        <HomeStackNavigator />
       </Container>
     );
   }
